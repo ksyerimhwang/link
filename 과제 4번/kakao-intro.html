@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>KAKAO 소개</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="kakaofriend.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">KAKAO 회사 소개</a></li>
+				<li><a href="#youtube" data-rel="dialog">KAKAO 공식 유튜브 채널</a></li>
+				<li><a href="#gallery">KAKAO 관련 사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>KAKAO_황예림</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>KAKAO 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="kakao1.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>KAKAO 연혁</h3>
+					<p>1995년 02월 다음커뮤니케이션으로 설립<br>
+                        1997년 05월 한메일(hanmail)서비스 시작<br>
+                        1999년 07월 Daum, 포털사이트 새단장<br>
+                        1999년 11월 다음커뮤니케이션 코스닥 상장<br>
+                        2004년 07월 라이코스 인수<br>
+                        2006년 12월 아이위랩 설립<br>
+                        2008년 06월 위지아 서비스 오픈<br>
+                        2008년 03월 부루 서비스 오픈<br>
+                        2010년 03월 카카오톡(ios) 출시<br>
+                        2010년 09월 아이위랩 -> 카카오로 사명 변경<br>
+                        2010년 12월 카카오톡 선물하기 오픈<br>
+                        2011년 10월 겁나빠른황소 프로젝트<br>
+                        2011년 11월 이석우 공동대표 취임<br>
+                        2011년 11월 카카오이모티콘 출시<br>
+                        2012년 11월 카카오프렌즈 출시, 카카오톡 그룹콜 서비스 시작<br>
+                        2012년 12월 카카오재팬, 야후재팬과 공동 전개 사업 전략 발표<br>
+                        2013년 06월 카카오톡 PC 정식 출시<br>
+                        2013년 07월 카카오톡 1억 가입자 돌파<br>
+                        2013년 09월 카카오뮤직 출시<br>
+                        2014년 10월 다음카카오 합병<br>
+                        2014년 11월 뱅크월렛카카오 출시<br>
+                        2014년 12월 카카오톡 비밀채팅 도입<br>
+                        2015년 11월 사용자와 함께하는 #(샵)검색 100대 개선 프로젝트<br>
+                        2015년 12월 1boon 오픈, 포도트리, 카카오 자회사 편입<br>
+                        2016년 09월 기프티콘 출시<br>
+                        2016년 10월 아지트 정식 버전 오픈, 카카오톡 상담톡 출시<br>
+                        2017년 11월 스마트스피커 카카오미니 정식 발매, 니니즈 출시<br>
+                        2018년 12월 카카오톡 라이브톡 기능 출시, 카카오커머스 사업부문 분사, 카카오프렌즈 첫 글로벌 매장 오픈_도쿄<br>
+                        2019년 11월 카카오메일 베타 서비스 출시<br>
+                        2019년 12월 카카오엔터프라이즈 출범, 인물 관련 검색어 및 실시간 이슈 검색어 폐지<br>
+                        2020년 11월 카카오재팬<픽코마>, 전세계 만화-소설 앱 매출 1위 기록<br>
+                        2020년 12월 카카오톡 지갑 출시, 카카오, 행정안전부 공공분야 전자서명 확대 도입 시범 사업자 선정<br>
+                        2021년 12월 디지털 헬스케어 CIC 설립.황희 교수 영입, 데이터센터 착공식 개최, 카카오-SKT, 'ESG공동펀드'통해 혁신 스타트업 투자<br>
+                        2022년 11월 카카오맵, 서울 지하철역 승강장 간격높이 정보 제공<br>
+                        2022년 12월 if(kakao)dev 2022 서비스 장애 재발방지대책 발표, '1015피해지원 협의체'와 함께 피해지원 방안 발표<br>
+                        2023년 05월 카카오톡 3번째 탭에 '오픈채팅'신설, 생성형AI'칼로''마음 배경 갤러리' 프로모션 진행, 카카오쇼핑라이브 전용 홈 오픈<br>
+                        </p>
+				</div>
+				<div data-role="collapsible">
+					<h3>KAKAO 위치</h3>
+					<p>KAKAO 본사는 '제주 제주시 첨단로 242 영평동 2181'에 위치한다. </p><br>
+               <img width="560" src="kakaohome2.png">
+               <p>KAKAO 판교 아지트는 '경기 성남시 분당구 판교역로 166'에 위치한다.</p><br>
+               <img width="560" src="kakaohome.png">
+				</div>
+				<div data-role="collapsible" >
+					<h3>KAKAO의 문화와 본질</h3>
+               <p> "카카오 크루는 종종 이렇게 묻곤 합니다.
+                  우리의 관점, 행동하는 방법, 지향하는 목표까지 카카오스러움은 이미 우리 안에 스며들어 있습니다.<br>
+                  우리가 더 나은 세상을 만들기 위해 고민하면서 자연스럽게 체득한 태도이자 본질이기 때문입니다.<br>
+                  앞으로도 우리는 카카오스러움에서 고민을 시작하고, 답을 찾을 것입니다." - KAKAO </p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>KAKAO_황예림</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="youtube" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>KAKAO 공식 유튜브 채널</h1>
+		</div>
+		<div data-role="content" >
+			<div data-role="content" >
+                <div class="ui-bar ui-bar-a">카카오 공식 유튜브 채널</div><br/>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/aXwXVCcGBb4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li><br/>
+                <div class="ui-bar ui-bar-a">모두의 카톡을 더 가깝게, 더 안전하게! 카톡설명서</div><br/>
+                   <li><iframe width="560" height="315" src="https://www.youtube.com/embed/RVpUDDkFpYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li><br/>
+             </div>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+	
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>KAKAO 관련 사진</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="사진1.jpeg" rel="external"><img src="사진1.jpeg" /></a></li>   
+            <li><a href="사진2.jpeg" rel="external"><img src="사진2.jpeg" /></a></li>
+            <li><a href="사진3.jpeg" rel="external"><img src="사진3.jpeg" /></a></li>
+            <li><a href="사진4.jpeg" rel="external"><img src="사진4.jpeg" /></a></li>
+            <li><a href="사진5.jpg" rel="external"><img src="사진5.jpg" /></a></li>
+            <li><a href="사진6.jpg" rel="external"><img src="사진6.jpg" /></a></li>
+            <li><a href="사진7.jpeg" rel="external"><img src="사진7.jpeg" /></a></li>
+            <li><a href="사진8.jpeg" rel="external"><img src="사진8.jpeg" /></a></li>
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>KAKAO_황예림</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
